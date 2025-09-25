@@ -1,5 +1,5 @@
 {% set name = "lightly-train" %}
-{% set version = "0.11.2" %}
+{% set version = "0.11.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lightly_train-{{ version }}.tar.gz
-  sha256: 3e52a6c4b7874a7cd966d8e7ab9c547447d31ab702cad99099f683c6ea7ca360
+  sha256: 116209868c45e2f848727a6842b247ce8959dda7d98f3c80a2ed0b56ced50bff
 
 build:
   entry_points:
@@ -47,7 +47,7 @@ test:
     - lightly-train --help
   requires:
     - pip
-    -  python {{ python_min }}
+    - python {{ python_min }}
 
 about:
   home: https://github.com/lightly-ai/lightly-train
