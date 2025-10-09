@@ -1,5 +1,5 @@
 {% set name = "lightly-train" %}
-{% set version = "0.11.3" %}
+{% set version = "0.11.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lightly_train-{{ version }}.tar.gz
-  sha256: 116209868c45e2f848727a6842b247ce8959dda7d98f3c80a2ed0b56ced50bff
+  sha256: c635dd61bb7d7da3458e25928e79c02286f7f28db93575e73413c93cc8c59856
 
 build:
   entry_points:
